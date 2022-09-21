@@ -1,0 +1,20 @@
+.navbar {
+    padding: 10px 10px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0; 
+    color: #841376;
+}
+
+.brand {
+    font-weight: 800;
+    font-size: 20px;
+    color: #841376;
+}
