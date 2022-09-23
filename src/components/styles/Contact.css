@@ -1,0 +1,13 @@
+#contact-box {
+    min-height: 30vh;
+    background-color: #e8daed;
+    padding: 20px;
+}
+
+#contact-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px;
+
+}

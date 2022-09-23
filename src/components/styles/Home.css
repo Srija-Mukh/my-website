@@ -1,6 +1,7 @@
 .home-body {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #F0F2FA;
+    overflow: scroll;
 }
 
 #home-box {
@@ -17,6 +18,7 @@
     width: 50vh;
     height: 40vh;
     border: 1px solid black;
+    padding-bottom: 5px;
 }
 
 img {
@@ -27,7 +29,9 @@ img {
 }
 
 #home-text {
-    max-width: 60%;
+    max-width: 70%;
+    margin: 10px;
+
 }
 
 .hello-text {

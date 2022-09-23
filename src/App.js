@@ -7,6 +7,7 @@ import Home from './components/Home';
 import {
   createTheme, responsiveFontSizes, ThemeProvider
 } from "@mui/material/styles/";
+import Contact from './components/Contact';
 
 let theme = createTheme({
   typography: {
@@ -29,6 +30,7 @@ function App() {
       <Header></Header>
         {/* <Home></Home> */}
         <Home></Home>
+        <Contact></Contact>
       </ThemeProvider>
     </div>
   );
