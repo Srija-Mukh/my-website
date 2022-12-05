@@ -9,16 +9,16 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1;
-    height: 80vh;
+    min-height: 70vh;
     padding: 20px;
     align-items: center;
 }
 
 #home-image {
-    width: 50vh;
+    width: 40vh;
     height: 40vh;
     border: 1px solid black;
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
 img {

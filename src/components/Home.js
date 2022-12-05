@@ -4,7 +4,10 @@ import Container from 'react-bootstrap/Container';
 import './styles/Home.css';
 import photo from './images/pic.png';
 
-function Home() {
+const Home = ({ contactRef }) => {
+  const onClick = () => {
+    contactRef.current.scrollIntoView({ behvaiour: 'smooth' });
+  };
   return (
     <div>
       <div className='home-body'>
@@ -12,7 +15,7 @@ function Home() {
           <div id='home-text'>
             <div className='hello-text'>
               <Typography variant='h3' style={{ fontWeight: '700' }}>
-                Hi, I'm Srija!
+                Hi, I'm Srija! 👋🏽
               </Typography>
             </div>
             <Typography variant='h7' style={{ fontWeight: '600' }}>
@@ -30,7 +33,7 @@ function Home() {
               Developer at
               <p style={{ display: 'inline', fontWeight: '700' }}>
                 {' '}
-                <a href='' style={{ color: '#981616' }}>
+                <a href='#' style={{ color: '#981616' }}>
                   {' '}
                   National Australia Bank
                 </a>{' '}
@@ -45,19 +48,19 @@ function Home() {
               <br />
               <br />
               If you’d like to chat or grab a cup of cha ☕, feel free to{' '}
-              <a href='' style={{ color: '#1C0742' }}>
+              <a href='#' onClick={onClick} style={{ color: '#1C0742' }}>
                 get in touch
               </a>{' '}
               .
             </div>
           </div>
           <div id='home-image'>
-            <img src={photo} alt='' />
+            <img src={photo} srcSet={photo} />
           </div>
         </Container>
       </div>
     </div>
   );
-}
+};
 
 export default Home;
