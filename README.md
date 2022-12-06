@@ -28,4 +28,5 @@ The website is also accessible via this [link]()
 
 ## Credits:
 - Inspiring [personal websites](https://medium.com/@meyrehay/8-student-websites-to-influence-your-own-1088cd61f7c1)
+- [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component)
 
