@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import './styles/Learning.css';
 import Typography from '@mui/material/Typography';
-import OutlinedCard from './Card';
+import {BigCard} from './Card';
 import Grid from '@mui/material/Grid';
 
-const Learning = () => {
+const Learning = forwardRef((props, ref) => {
   return (
-    <div id='learning-box'>
+    <div id='learning-box' ref={ref}>
       <Typography variant='p' style={{ fontWeight: '200' }}>
         A life philosophy I strive to live by is
       </Typography>
@@ -18,29 +18,29 @@ const Learning = () => {
       </Typography>
       <Grid container spacing={2} sx={{ marginTop: '10px' }}>
         <Grid item xs={12} lg={4} md={4}>
-          <OutlinedCard
+          <BigCard
             title=' 🔨 BUILDING 🔨'
             description='Working on creating..'
             list={['This website', 'A React calculator']}
-          ></OutlinedCard>
+          ></BigCard>
         </Grid>
         <Grid item xs={12} lg={4} md={4}>
-          <OutlinedCard
+          <BigCard
             title='📚 LEARNING 📚'
             description='Currently studying up on..'
             list={['AWS Cloud Fundamentals', 'Apache Kafka Fundamentals', 'Springboot Fundamentals']}
-          ></OutlinedCard>
+          ></BigCard>
         </Grid>
         <Grid item xs={12} lg={4} md={4}>
-          <OutlinedCard
+          <BigCard
             title='🔎 EXPLORING 🔎'
             description='Looking to start learning..'
             list={['Web3', 'Cybersecurity Fundamentals']}
-          ></OutlinedCard>
+          ></BigCard>
         </Grid>
       </Grid>
     </div>
   );
-};
+});
 
 export default Learning;

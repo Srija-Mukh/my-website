@@ -6,9 +6,9 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-const Contact = forwardRef((props, contactRef) => {
+const Contact = forwardRef((props, ref) => {
   return (
-    <footer id='contact-box' ref={contactRef}>
+    <footer id='contact-box' ref={ref}>
       <div>
         <Typography variant='h4' style={{ fontWeight: '600' }}>
           Contact Me

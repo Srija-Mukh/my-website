@@ -1,0 +1,26 @@
+.vertical-timeline-element-content {
+    padding: 25px !important;
+    width: 80%;
+    text-align: left;
+    
+}
+
+.icon-img {
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+}
+  
+.date {
+  color: #6A097D;
+}
+
+.vertical-timeline-element-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.vertical-timeline-element-subtitle {
+    font-family: Inter;
+    font-size: 14px;
+}

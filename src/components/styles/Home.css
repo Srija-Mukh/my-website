@@ -2,6 +2,7 @@
     /* height: 100vh; */
     background-color: #F0F2FA;
     overflow: scroll;
+
 }
 
 #home-box {
@@ -9,7 +10,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1;
-    min-height: 70vh;
+    min-height: 100vh;
     padding: 20px;
     align-items: center;
 }
