@@ -8,9 +8,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Contact = forwardRef((props, ref) => {
   return (
-    <footer id='contact-box' ref={ref}>
+    <footer className='contact-box' ref={ref}>
       <div>
-        <Typography variant='h4' style={{ fontWeight: '600' }}>
+        <Typography variant='h4'>
           Contact Me
         </Typography>
         <div id='contact-icons'>

@@ -1,4 +1,8 @@
-#learning-box{
+.learning-box{
     padding: 20px;
     min-height: 30vh;
+}
+
+#dark .learning-box {
+    background-color: #c799d7;
 }

@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 
 const Learning = forwardRef((props, ref) => {
   return (
-    <div id='learning-box' ref={ref}>
+    <div className='learning-box' ref={ref}>
       <Typography variant='p' style={{ fontWeight: '200' }}>
         A life philosophy I strive to live by is
       </Typography>

@@ -2,8 +2,28 @@
     /* height: 100vh; */
     background-color: #F0F2FA;
     overflow: scroll;
+    margin-top: 40px;
 
 }
+
+#dark .home-body {
+    background-color: #150050;
+
+}
+
+.get-in-touch {
+    color: #1C0742;
+}
+
+#dark .get-in-touch {
+    color: #e8528c;
+}
+
+
+#dark .welcome-phrase {
+    color: #e8528c;
+}
+
 
 #home-box {
     display: flex;
@@ -45,4 +65,9 @@ img {
     border: 1px solid #1C0742 ;
     color: #1C0742;
     margin-bottom: 20px;
+}
+
+#dark .hello-text {
+    box-shadow: 5px 7px rgba(225, 222, 231, 0.5);
+    border: 1px solid #da3574 ;
 }

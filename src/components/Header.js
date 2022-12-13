@@ -3,6 +3,8 @@ import './styles/Header.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Switch from '@mui/material/Switch';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 function Header({
   contactRef,
@@ -10,6 +12,7 @@ function Header({
   projectsRef,
   learningRef,
   aboutRef,
+  onToggle
 }) {
   const goToContact = (e) => {
     e.preventDefault();
@@ -60,6 +63,14 @@ function Header({
             <Nav.Link id='contact' href='#' onClick={goToContact}>
               <p>contact</p>
             </Nav.Link>
+            <FormControlLabel
+              value='top'
+              control={
+                <Switch color='secondary' onChange={onToggle} />
+              }
+              label='Try dark mode'
+              labelPlacement='start'
+            ></FormControlLabel>
           </Nav>
         </Navbar.Collapse>
       </Container>

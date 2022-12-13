@@ -1,4 +1,4 @@
-#contact-box {
+.contact-box {
     margin: 20px;
     min-height: 25vh;
     background-color: #e8daed;
@@ -10,6 +10,10 @@
 
 }
 
+#dark .contact-box {
+    color: #e8daed;
+    background-color: #1C0742;
+}
 #contact-icons {
     display: flex;
     align-items: center;

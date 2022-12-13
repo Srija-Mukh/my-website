@@ -13,16 +13,39 @@ import { useRef } from 'react';
 import Learning from './components/Learning';
 import Journey from './components/Journey';
 import Projects from './components/Projects';
+import { useState, useCallback } from 'react';
+import { useEffect } from 'react';
 
-let theme = createTheme({
+let lightTheme = createTheme({
   typography: {
     fontFamily: ['Inter', 'Source Sans Pro'].join(','),
     p: {
       fontFamily: 'Inter',
+      color: '#191b1e',
+    },
+    h4: {
+      fontWeight: '700',
+      color: '#1C0742',
     },
   },
 });
-theme = responsiveFontSizes(theme);
+lightTheme = responsiveFontSizes(lightTheme);
+
+let darkTheme = createTheme({
+  typography: {
+    fontFamily: ['Inter', 'Source Sans Pro'].join(','),
+    p: {
+      fontFamily: 'Inter',
+      color: '#F0F2FA',
+    },
+    h4: {
+      fontWeight: '700',
+      color: '#e8528c',
+    },
+  },
+});
+
+darkTheme = responsiveFontSizes(darkTheme);
 
 function App() {
   const contactRef = useRef(null);
@@ -31,13 +54,25 @@ function App() {
   const learningRef = useRef(null);
   const aboutRef = useRef(null);
 
+  const [light, setLight] = useState(true);
+  const handleToggle = useCallback(() => {
+    setLight(!light);
+  }, [light]);
+
   return (
-    <div className='App'>
-      <ThemeProvider theme={theme}>
-        <Header contactRef={contactRef} journeyRef={journeyRef} projectsRef={projectsRef} learningRef={learningRef} aboutRef={aboutRef}></Header>
+    <div className='App' id={light ? "light" : "dark"}>
+      <ThemeProvider theme={light ? lightTheme : darkTheme}>
+        <Header
+          contactRef={contactRef}
+          journeyRef={journeyRef}
+          projectsRef={projectsRef}
+          learningRef={learningRef}
+          aboutRef={aboutRef}
+          onToggle={handleToggle}
+        ></Header>
         <Home contactRef={contactRef} ref={aboutRef}></Home>
         <Journey ref={journeyRef}></Journey>
-        <Projects ref={projectsRef} ></Projects>
+        <Projects ref={projectsRef}></Projects>
         <Learning ref={learningRef}></Learning>
         <Contact ref={contactRef}></Contact>
       </ThemeProvider>

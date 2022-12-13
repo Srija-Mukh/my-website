@@ -1,4 +1,8 @@
-#journey-box {
+.journey-box {
     padding: 20px;
     background-color: #c799d7;
+}
+
+#dark .journey-box {
+    background-color: #4c0b54;
 }

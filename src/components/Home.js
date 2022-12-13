@@ -5,7 +5,7 @@ import './styles/Home.css';
 import photo from './images/pic.png';
 
 const Home = forwardRef((contactRef, ref) => {
-  const onClick = (e) => {
+  const goToContact = (e) => {
     e.preventDefault();
     contactRef.current.scrollIntoView({ behaviour: 'smooth' });
   };
@@ -18,29 +18,34 @@ const Home = forwardRef((contactRef, ref) => {
               Hi, I'm Srija! 👋🏽
             </Typography>
           </div>
-          <Typography variant='h7' style={{ fontWeight: '600' }}>
+          <Typography class='welcome-phrase' variant='h7' style={{ fontWeight: '600' }}>
             Welcome to my personal website :))
           </Typography>
           <div>
-            I am currently a student at the
-            <p style={{ display: 'inline', fontWeight: '700' }}>
+            <Typography variant='p'>
+              I am currently a student at the
+            </Typography>
+            <Typography variant='p' style={{ display: 'inline', fontWeight: '700' }}>
               {' '}
               <a href='' style={{ color: '#F8AB20' }}>
                 University of New South Wales
               </a>
-            </p>
+            </Typography>
+            <Typography variant='p'>
             , studying Software Engineering. I’m also interning as a Software
             Developer at
-            <p style={{ display: 'inline', fontWeight: '700' }}>
+            </Typography>
+            <Typography variant='p' style={{ display: 'inline', fontWeight: '700' }}>
               {' '}
               <a href='#' style={{ color: '#981616' }}>
                 {' '}
                 National Australia Bank
               </a>{' '}
-            </p>
+            </Typography>
             .
             <br />
             <br />
+            <Typography variant='p'>
             Everyday, I feel amazed and inspired by the ✨ potential of
             technology ✨ and hope to build products that spread joy. I love
             meeting new people and hearing about their unique experiences and in
@@ -48,10 +53,11 @@ const Home = forwardRef((contactRef, ref) => {
             <br />
             <br />
             If you’d like to chat or grab a cup of cha ☕, feel free to{' '}
-            <a href='#' onClick={onClick} style={{ color: '#1C0742' }}>
+            <a class='get-in-touch' href='#' onClick={goToContact}>
               get in touch
             </a>{' '}
             .
+            </Typography>
           </div>
         </div>
         <div id='home-image'>

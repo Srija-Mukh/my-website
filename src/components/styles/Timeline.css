@@ -24,3 +24,7 @@
     font-family: Inter;
     font-size: 14px;
 }
+
+#dark .date {
+  color: #e8528c;
+}

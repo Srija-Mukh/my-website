@@ -7,8 +7,8 @@ import {SmallCard} from './Card';
 
 const Projects = forwardRef((props, ref) => {
   return (
-    <div id='projects-box' ref={ref}>
-      <Typography variant='h4' style={{ fontWeight: '600', color: '#1C0742' }}>
+    <div className='projects-box' ref={ref}>
+      <Typography variant='h4'>
         My Projects
       </Typography>
       <Typography variant='p'>These are a couple of projects I worked on.</Typography>

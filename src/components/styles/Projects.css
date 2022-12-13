@@ -1,5 +1,9 @@
-#projects-box {
+.projects-box {
     min-height: 60vh;
     padding: 30px;
     background-color: rgb(237, 233, 241);
+}
+
+#dark .projects-box{
+    background-color: #3F0071;
 }
