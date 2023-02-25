@@ -14,7 +14,6 @@ import Learning from './components/Learning';
 import Journey from './components/Journey';
 import Projects from './components/Projects';
 import { useState, useCallback } from 'react';
-import { useEffect } from 'react';
 
 let lightTheme = createTheme({
   typography: {

@@ -23,7 +23,7 @@ function Timeline() {
               date={e.date}
               dateClassName='date'
               iconStyle={iconStyles}
-              icon={<img class='icon-img' src={e.img} />}
+              icon={<img class='icon-img' src={e.img}/>}
             >
               <h4 className='vertical-timeline-element-title'>{e.title}</h4>
               <h5 className='vertical-timeline-element-subtitle'>

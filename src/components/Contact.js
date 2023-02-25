@@ -28,7 +28,7 @@ const Contact = forwardRef((props, ref) => {
           </div>
         </div>
         <Typography style={{ fontSize: '12px', marginTop: '20px' }}>
-          ©Srija Mukherjee, 2022
+          ©Srija Mukherjee, 2023
         </Typography>
       </div>
     </footer>

@@ -3,9 +3,10 @@ import Typography from '@mui/material/Typography';
 import Container from 'react-bootstrap/Container';
 import './styles/Home.css';
 import photo from './images/pic.png';
+import Emoji from './Emoji';
 
 const Home = forwardRef((contactRef, ref) => {
-  const goToContact = (e) => {
+  const ToContact = (e) => {
     e.preventDefault();
     contactRef.current.scrollIntoView({ behaviour: 'smooth' });
   };
@@ -15,7 +16,7 @@ const Home = forwardRef((contactRef, ref) => {
         <div id='home-text'>
           <div className='hello-text'>
             <Typography variant='h3' style={{ fontWeight: '700' }}>
-              Hi, I'm Srija! 👋🏽
+              Hi, I'm Srija! <Emoji symbol="👋🏽"></Emoji>
             </Typography>
           </div>
           <Typography class='welcome-phrase' variant='h7' style={{ fontWeight: '600' }}>
@@ -32,8 +33,8 @@ const Home = forwardRef((contactRef, ref) => {
               </a>
             </Typography>
             <Typography variant='p'>
-            , studying Software Engineering. I’m also interning as a Software
-            Developer at
+            , studying Software Engineering. I also recently interned as a Software
+            Engineer at
             </Typography>
             <Typography variant='p' style={{ display: 'inline', fontWeight: '700' }}>
               {' '}
@@ -46,14 +47,13 @@ const Home = forwardRef((contactRef, ref) => {
             <br />
             <br />
             <Typography variant='p'>
-            Everyday, I feel amazed and inspired by the ✨ potential of
-            technology ✨ and hope to build products that spread joy. I love
-            meeting new people and hearing about their unique experiences and in
-            my free time watching Bollywood movies.
+            Everyday, I feel amazed and inspired by the <Emoji symbol="✨"></Emoji>  potential of
+            technology <Emoji symbol="✨"></Emoji> and hope to build products that spread joy. I love
+            meeting new people and hearing about their unique experiences. In my free time, you can find me walking on long coastal trails, watching Bollywood movies, playing Badminton or reading.
             <br />
             <br />
-            If you’d like to chat or grab a cup of cha ☕, feel free to{' '}
-            <a class='get-in-touch' href='#' onClick={goToContact}>
+            If you’d like to chat or grab a cup of cha <Emoji symbol="☕"></Emoji> , feel free to{' '}
+            <a class='get-in-touch' href='#'>
               get in touch
             </a>{' '}
             .

@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const OutlinedCard = ({ title, description, list }) => {
   return (
@@ -31,9 +32,12 @@ const OutlinedCard = ({ title, description, list }) => {
   );
 };
 
-const SmallOutlinedCard = ({ title, description, list }) => {
+const SmallOutlinedCard = ({ title, description, link }) => {
   return (
-    <Card variant='outlined' sx={{ border: '2px solid #841376', padding: '5px'}}>
+    <Card
+      variant='outlined'
+      sx={{ border: '2px solid #841376', padding: '5px' }}
+    >
       <CardContent>
         <Typography
           variant='h6'
@@ -46,16 +50,10 @@ const SmallOutlinedCard = ({ title, description, list }) => {
         <Typography sx={{ mb: 1.5 }} color='text.secondary'>
           {description}
         </Typography>
-        {list.map((item) => (
-          <Typography variant='body1' style={{ margin: '4px' }}>
-            {item}
-            <br />
-          </Typography>
-        ))}
       </CardContent>
-      <Button variant='outlined' size='small' color="secondary">
+        <Button href={link} variant='outlined' size='small' color='secondary'>
           Find out More
-      </Button>
+        </Button>
     </Card>
   );
 };
@@ -72,13 +70,13 @@ export function BigCard({ title, description, list }) {
   );
 }
 
-export function SmallCard({ title, description, list }) {
+export function SmallCard({ title, description, link }) {
   return (
-    <Box sx={{ minWidth: 100, maxWidth: 450, margin: 'auto'}}>
+    <Box sx={{ minWidth: 100, maxWidth: 450, margin: 'auto' }}>
       <SmallOutlinedCard
         title={title}
         description={description}
-        list={list}
+        link={link}
       ></SmallOutlinedCard>
     </Box>
   );
