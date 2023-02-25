@@ -2,7 +2,6 @@ import React, { forwardRef } from 'react';
 import Typography from '@mui/material/Typography';
 import Container from 'react-bootstrap/Container';
 import './styles/Home.css';
-import photo from './images/pic.png';
 import Emoji from './Emoji';
 
 const Home = forwardRef((contactRef, ref) => {
@@ -49,7 +48,7 @@ const Home = forwardRef((contactRef, ref) => {
             <Typography variant='p'>
             Everyday, I feel amazed and inspired by the <Emoji symbol="✨"></Emoji>  potential of
             technology <Emoji symbol="✨"></Emoji> and hope to build products that spread joy. I love
-            meeting new people and hearing about their unique experiences. In my free time, you can find me walking on long coastal trails, watching Bollywood movies, playing Badminton or reading.
+            meeting new people and hearing about their unique experiences. In my free time, you can find me walking on long coastal trails, watching Bollywood movies, playing Badminton or reading <Emoji symbol="📚"></Emoji>.
             <br />
             <br />
             If you’d like to chat or grab a cup of cha <Emoji symbol="☕"></Emoji> , feel free to{' '}
@@ -60,9 +59,9 @@ const Home = forwardRef((contactRef, ref) => {
             </Typography>
           </div>
         </div>
-        <div id='home-image'>
-          <img src={photo} srcSet={photo} />
-        </div>
+        {/* <div id='home-image'>
+          <img src={} srcSet={} />
+        </div> */}
       </Container>
     </div>
   );
