@@ -17,21 +17,21 @@ const Projects = forwardRef((props, ref) => {
           <SmallCard
             title=' Connect 4'
             description='A game of Connect 4 created using React'
-            link=""
+            link="https://github.com/Srija-Mukh/connect-four"
           ></SmallCard>
         </Grid>
         <Grid item xs={6} lg={3} md={2}>
           <SmallCard
             title='React Spring Calculator'
             description='A calculator that calls an API written in springboot to make calculations.'
-            link=""
+            link="https://github.com/Srija-Mukh/react-spring-calc"
           ></SmallCard>
         </Grid>
         <Grid item xs={12} lg={3} md={2}>
           <SmallCard
             title='Puppy Safe Chrome Extension'
             description="A chrome extension that could potentially use NLP to report incidents of cyberbullying. This submission won 4th place in CSESoc's 2022 Annual Hackathon. "
-            link=""
+            link="https://github.com/Peedee2002/Hackathon2022"
           ></SmallCard>
         </Grid>
       </Grid>
