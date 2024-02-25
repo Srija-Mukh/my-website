@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const OutlinedCard = ({ title, description, list }) => {
   return (
@@ -32,7 +32,7 @@ const OutlinedCard = ({ title, description, list }) => {
   );
 };
 
-const SmallOutlinedCard = ({ title, description, link }) => {
+const SmallOutlinedCard = ({ title, description, link, button }) => {
   return (
     <Card
       variant='outlined'
@@ -51,9 +51,17 @@ const SmallOutlinedCard = ({ title, description, link }) => {
           {description}
         </Typography>
       </CardContent>
-        <Button href={link} variant='outlined' size='small' color='secondary'>
+      {button && (
+        <Button
+          href={link}
+          target='_blank'
+          variant='outlined'
+          size='small'
+          color='secondary'
+        >
           Find out More
         </Button>
+      )}
     </Card>
   );
 };
@@ -70,13 +78,14 @@ export function BigCard({ title, description, list }) {
   );
 }
 
-export function SmallCard({ title, description, link }) {
+export function SmallCard({ title, description, link, button }) {
   return (
     <Box sx={{ minWidth: 100, maxWidth: 450, margin: 'auto' }}>
       <SmallOutlinedCard
         title={title}
         description={description}
         link={link}
+        button={button}
       ></SmallOutlinedCard>
     </Box>
   );

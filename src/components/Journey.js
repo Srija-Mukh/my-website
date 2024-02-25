@@ -10,7 +10,7 @@ const Journey = forwardRef((props, ref) => {
       <Typography variant='h4'>
         My Journey
       </Typography>
-      <Typography variant='p'>These are a couple of milestones and achievements that I believe have shaped me.</Typography>
+      <Typography variant='p'>These are a couple of milestones and achievements that I believe have shaped my journey in the Tech Industry.</Typography>
       <Timeline></Timeline>
     </div>
   );

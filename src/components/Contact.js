@@ -8,7 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Contact = forwardRef((props, ref) => {
   return (
-    <footer className='contact-box' ref={ref}>
+    <footer id='contact-box' ref={ref}>
       <div>
         <Typography variant='h4'>
           Contact Me
@@ -16,19 +16,19 @@ const Contact = forwardRef((props, ref) => {
         <div id='contact-icons'>
           <div className='icon-box'>
             <EmailIcon></EmailIcon>
-            <Typography variant='p'>Email</Typography>
+            <a href="mailto:mukh.srija@gmail.com"><Typography variant='p'>Email</Typography></a>
           </div>
           <div className='icon-box'>
             <GitHubIcon></GitHubIcon>
-            <Typography variant='p'>Github</Typography>
+            <a href="https://github.com/Srija-Mukh"><Typography variant='p'>Github</Typography></a>
           </div>
           <div className='icon-box'>
             <LinkedInIcon></LinkedInIcon>
-            <Typography variant='p'>LinkedIn</Typography>
+            <a href="https://www.linkedin.com/in/srija-mukherjee-0541001aa/"><Typography variant='p' >LinkedIn</Typography></a>
           </div>
         </div>
         <Typography style={{ fontSize: '12px', marginTop: '20px' }}>
-          ©Srija Mukherjee, 2023
+          ©Srija Mukherjee, 2024
         </Typography>
       </div>
     </footer>

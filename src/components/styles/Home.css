@@ -1,12 +1,11 @@
-.home-body {
+#home-body {
     /* height: 100vh; */
     background-color: #F0F2FA;
     overflow: scroll;
     margin-top: 40px;
-
 }
 
-#dark .home-body {
+#dark #home-body {
     background-color: #150050;
 
 }
@@ -58,7 +57,7 @@
 .hello-text {
     /* position: absolute;
     left: 20%; */
-    z-index: 1;
+    /* z-index: 2; */
     padding: 10px;
     background-color: white;
     box-shadow: 5px 7px rgba(28, 7, 65, 0.5);
@@ -70,4 +69,8 @@
 #dark .hello-text {
     box-shadow: 5px 7px rgba(225, 222, 231, 0.5);
     border: 1px solid #da3574 ;
+}
+
+#home-body a {
+    text-decoration: underline;
 }

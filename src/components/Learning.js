@@ -21,21 +21,21 @@ const Learning = forwardRef((props, ref) => {
           <BigCard
             title=' 🔨 BUILDING 🔨'
             description='Working on creating..'
-            list={['This website', 'Microservices to import and process data']}
+            list={['This website', 'The World Clock Project']}
           ></BigCard>
         </Grid>
         <Grid item xs={12} lg={4} md={4}>
           <BigCard
             title='📚 LEARNING 📚'
             description='Currently studying up on..'
-            list={['AI Search Algorithms', 'Springboot Fundamentals']}
+            list={['AWS Cloud and GCP', 'Web Application Security']}
           ></BigCard>
         </Grid>
         <Grid item xs={12} lg={4} md={4}>
           <BigCard
             title='🔎 EXPLORING 🔎'
             description='Looking to start learning..'
-            list={['Web3', 'Cybersecurity Fundamentals', 'Human Evolution']}
+            list={['Web3', 'Korean']}
           ></BigCard>
         </Grid>
       </Grid>
