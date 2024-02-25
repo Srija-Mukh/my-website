@@ -53,6 +53,14 @@ const Projects = forwardRef((props, ref) => {
             button={false}
           ></SmallCard>
         </Grid>
+        <Grid item xs={12} md={3} lg={4}>
+          <SmallCard
+            title='Thesis Project (WIP)'
+            description='A Searchable Encryption scheme for genetic data.'
+            link='#'
+            button={false}
+          ></SmallCard>
+        </Grid>
       </Grid>
     </div>
   );
