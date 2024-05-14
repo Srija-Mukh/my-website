@@ -36,7 +36,7 @@ const SmallOutlinedCard = ({ title, description, link, button }) => {
   return (
     <Card
       variant='outlined'
-      sx={{ border: '2px solid #841376', padding: '5px' }}
+      sx={{ border: '2px solid #841376', padding: '5px', backgroundColor: '#F6F5F5' }}
     >
       <CardContent>
         <Typography
@@ -58,6 +58,7 @@ const SmallOutlinedCard = ({ title, description, link, button }) => {
           variant='outlined'
           size='small'
           color='secondary'
+          sx={{'&:hover': {backgroundColor: 'purple', color: 'white'}}}
         >
           Find out More
         </Button>

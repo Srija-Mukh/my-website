@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 const Learning = forwardRef((props, ref) => {
   return (
     <div className='learning-box' ref={ref}>
-      <Typography variant='p' style={{ fontWeight: '200' }}>
+      <Typography variant='p'>
         A life philosophy I strive to live by is
       </Typography>
       <Typography style={{ fontStyle: 'italic' }}>
@@ -20,22 +20,22 @@ const Learning = forwardRef((props, ref) => {
         <Grid item xs={12} lg={4} md={4}>
           <BigCard
             title=' 🔨 BUILDING 🔨'
-            description='Working on creating..'
-            list={['This website', 'The World Clock Project']}
+            description='Working on ..'
+            list={['This website', 'The World Clock Project', 'My thesis']}
           ></BigCard>
         </Grid>
         <Grid item xs={12} lg={4} md={4}>
           <BigCard
             title='📚 LEARNING 📚'
             description='Currently studying up on..'
-            list={['AWS Cloud and GCP', 'Web Application Security']}
+            list={['AWS Cloud and GCP', 'Korean']}
           ></BigCard>
         </Grid>
         <Grid item xs={12} lg={4} md={4}>
           <BigCard
             title='🔎 EXPLORING 🔎'
             description='Looking to start learning..'
-            list={['Web3', 'Korean']}
+            list={['Web3', 'Web Application Security']}
           ></BigCard>
         </Grid>
       </Grid>

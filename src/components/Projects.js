@@ -7,10 +7,11 @@ import { SmallCard } from './Card';
 
 const Projects = forwardRef((props, ref) => {
   return (
+    
     <div className='projects-box' ref={ref}>
       <Typography variant='h4'>My Projects</Typography>
       <Typography variant='p'>
-        These are a couple of projects I worked on.
+        When I am not busy with uni, I build projects to practice my skills. These are a couple.
       </Typography>
       <Grid container spacing={2} sx={{ marginTop: '10px' }}>
         <Grid item xs={12} md={3} lg={4}>

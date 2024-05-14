@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef } from 'react';
+import React, { forwardRef } from 'react';
 import Typography from '@mui/material/Typography';
 import Container from 'react-bootstrap/Container';
 import './styles/Home.css';

@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import './styles/SparkleTrail.css';
 
 const SparkleTrail = ({ targetSelector }) => {
   useEffect(() => {
-    const sparkles = [];
 
     const createSparkle = (x, y) => {
       const sparkle = document.createElement('div');
