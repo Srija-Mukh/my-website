@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.fe70f19e.css",
-    "main.js": "/my-website/static/js/main.da692502.js",
+    "main.css": "/my-website/static/css/main.f3b97680.css",
+    "main.js": "/my-website/static/js/main.5a5c7e12.js",
     "static/js/453.7476e934.chunk.js": "/my-website/static/js/453.7476e934.chunk.js",
+    "static/media/compclub.png": "/my-website/static/media/compclub.16e2c06d9283044f1573.png",
+    "static/media/gpn.png": "/my-website/static/media/gpn.1f2633ae3fc528df5990.png",
+    "static/media/wit.png": "/my-website/static/media/wit.d4300c11ca718b7eb37f.png",
+    "static/media/tutor.png": "/my-website/static/media/tutor.58607a4932fb90324b2f.png",
+    "static/media/uni.png": "/my-website/static/media/uni.cbc6ae0e05f3482839e5.png",
+    "static/media/school.png": "/my-website/static/media/school.86ca73c6c07d042112e3.png",
+    "static/media/csesoc.png": "/my-website/static/media/csesoc.83c7300fee635344713c.png",
+    "static/media/internship.png": "/my-website/static/media/internship.17dd20dce4088a3a414b.png",
     "index.html": "/my-website/index.html",
-    "main.fe70f19e.css.map": "/my-website/static/css/main.fe70f19e.css.map",
-    "main.da692502.js.map": "/my-website/static/js/main.da692502.js.map",
+    "main.f3b97680.css.map": "/my-website/static/css/main.f3b97680.css.map",
+    "main.5a5c7e12.js.map": "/my-website/static/js/main.5a5c7e12.js.map",
     "453.7476e934.chunk.js.map": "/my-website/static/js/453.7476e934.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe70f19e.css",
-    "static/js/main.da692502.js"
+    "static/css/main.f3b97680.css",
+    "static/js/main.5a5c7e12.js"
   ]
 }
