@@ -1,6 +1,3 @@
-# my-website
-Access via this [link](https://srija-mukh.github.io/my-website/)
-
 ## About
 A personal website, prototyped using Figma and built using React, Bootstrap and Material UI. 
 
@@ -15,7 +12,6 @@ A personal website, prototyped using Figma and built using React, Bootstrap and 
 - Improve colour palette.
 - Implement more animations.
 
-## Credits:
-- Inspiring [personal websites](https://medium.com/@meyrehay/8-student-websites-to-influence-your-own-1088cd61f7c1)
+## Credits/Inspiration:
+- [personal websites](https://medium.com/@meyrehay/8-student-websites-to-influence-your-own-1088cd61f7c1)
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component)
-
